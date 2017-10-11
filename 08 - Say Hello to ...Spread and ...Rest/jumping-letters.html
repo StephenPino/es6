@@ -30,6 +30,14 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
+  const header = document.querySelector(".jump");
+  header.innerHTML = spanWrapper(header.textContent);
+  const letters = [...text];
+  function spanWrapper(word){
+    return [...word].map(letter => `<span>${letter}</span>`).join("");
+  }
+
+
   
 </script>
 </body>

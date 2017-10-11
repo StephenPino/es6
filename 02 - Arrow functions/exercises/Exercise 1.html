@@ -9,7 +9,7 @@
 <body>
 
   <ul>
-    <li data-time="5:17">YOYOYO Video</li>
+    <li data-time="5:17">Flexbox Video</li>
     <li data-time="8:22">Flexbox Video</li>
     <li data-time="3:34">Redux Video</li>
     <li data-time="5:23">Flexbox Video</li>
@@ -33,7 +33,7 @@
 
   <script>
     // Select all the list items on the page and convert to array
-    const listArray = Array.from(document.querySelectorAll('[data-time]'));
+    const listArray = Array.from(document.getElementsByTagName("li"));
     // Filter for only the elements that contain the word 'flexbox'
     const flexboxArray = listArray
       .filter(item => item.textContent.includes("Flexbox"))
